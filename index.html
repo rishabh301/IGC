@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name ="viewport" content="with=device-width,intial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>University website design - Easy Tutorials</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,300;0,600;0,700;1,100&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+         <section class="header">
+            <nav >
+                <a href="index.html" ><img src="logo_transparent.png"></a>
+                <a href="https://www.youtube.com/watch?v=0ZbHu7xhOMY"><p class="vit">VIT BHOPAL</p></a>
+                <div class="nav-links">
+                    <ul>
+                        
+                        <li><a href="http://127.0.0.1:5500/index.html">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">LOGO</a></li>
+                    </ul>
+
+                </div>
+                
+            </nav>    
+            <div class="text-box">
+                <h1>IMAGE CAPTION GENERATOR</h1>
+                <P>UPLOAD IMAGE HERE </P>
+                <form>
+                  <input type="file" id="input-image" accept="image/*">
+                  <br><br>
+                  <img id="preview">
+                </form>
+                <script>
+                  const inputImage = document.getElementById("input-image");
+            const preview = document.getElementById("preview");
+            
+            inputImage.addEventListener("change", function() {
+              const imageFile = inputImage.files[0];
+              preview.src = URL.createObjectURL(imageFile);
+            });
+            
+                </script>
+                  
+                  
+                <a href="" class="hero-btn">Visit us to know More</a>
+            </div>
+        </section>
+    </body>
+</html>
